@@ -1,0 +1,23 @@
+{
+    "name": "Google Meet On-Air",
+    "description": "Capture events when Google Meet goes on and off air.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://meet.google.com/*"],
+            "run_at": "document_idle",
+            "js": ["onAirClient.js"]
+        }
+    ],
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+}
