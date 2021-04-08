@@ -13,11 +13,15 @@
             "js": ["onAirClient.js"]
         }
     ],
-    "permissions": ["activeTab", "scripting"],
+    "options_page": "options.html",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+        "default_popup": "options.html"
+    },
     "icons": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
+      "16": "/images/logo_on_16.png",
+      "32": "/images/logo_on_32.png",
+      "48": "/images/logo_on_48.png",
+      "128": "/images/logo_on_128.png"
     }
 }

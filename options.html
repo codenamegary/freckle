@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="options.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <script src="font-awesome.js" crossorigin="anonymous"></script>
+    <title>Google Meet Tasmota Options</title>
+  </head>
+  <body>
+    <h1>Tasmota Configuration</h1>
+    <p><a href="#" class="text-reset" id="reset-options">Reset to defaults</a></p>
+    <form>
+        <div class="mb-3">
+            <label for="online-url" class="form-label">Online URL</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="online-url" aria-describedby="test-online-url" value="http://192.168.0.X/cm?cmnd=Power%20On">
+                <button class="btn btn-outline-secondary" type="button" id="test-online-url">Test</button>
+            </div>
+            <div id="onlineUrlHelp" class="form-text">Enter the URL that the extension should ping when a Google Meet is <em>connected</em>.</div>
+        </div>
+        <div class="mb-3">
+            <label for="offline-url" class="form-label">Offline URL</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="offline-url" aria-describedby="test-offline-url" value="http://192.168.0.X/cm?cmnd=Power%20Off">
+                <button class="btn btn-outline-secondary" type="button" id="test-offline-url">Test</button>
+            </div>
+            <div id="offlineUrlHelp" class="form-text">Enter the URL that the extension should ping when a Google Meet is <em>disconnected</em>.</div>
+        </div>
+        <button type="button" id="save-config" class="btn btn-primary animate__rubberBand">Save</button>
+    </form>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+      <div id="changes-saved-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="fas fa-check green"></i> Changes saved
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+      <div id="options-reset-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="fas fa-check green"></i> Options reset, please save
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+      <div id="generic-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="fas green"></i> <span class="message"></span>
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
