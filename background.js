@@ -1,37 +1,23 @@
-chrome.runtime.onInstalled.addListener(() => {
+(function(){
+
+  chrome.runtime.onInstalled.addListener(() => {
     console.log('extension ready');
-});
+  });
 
-/**
-chrome.runtime.onMessage.addListener((message, callback) => {
-    if (message == "runContentScript"){
-      chrome.scripting.executeScript({
-        file: 'onAirClient.js'
+  chrome.runtime.onMessage.addListener((request, sender, callback) => {
+    if (request.event == "options.updated"){
+      console.log("Background worker got options updated event.");
+      console.log(request);
+      chrome.tabs.query({}, tabs => {
+        console.log(tabs);
+        tabs.forEach(tab => {
+          console.log("sending request message to " + tab.id);
+          chrome.tabs.sendMessage(tab.id, request);
+        });
       });
+      callback(request);
     }
-});
- */
+  });
 
-/**
-let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+})();
 
-console.log(tab);
-
- */
-
-/**var target = document.querySelector("[aria-label='Leave call']");
-
-// create an observer instance
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    console.log(mutation.type);
-  });    
-});
-
-// configuration of the observer:
-var config = { attributes: true, childList: true, characterData: true };
-
-// pass in the target node, as well as the observer options
-observer.observe(target, config);
-
- */
