@@ -13,7 +13,7 @@
     for (var i = 0; i < links.length; i++) {
       (function () {
           var ln = links[i];
-          if(ln.href == "" || ln.href == "#") {
+          if(ln.classList.contains("no-tab")) {
             return;
           }
           var location = ln.href;
