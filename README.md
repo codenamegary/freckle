@@ -1,4 +1,6 @@
-# Tasmota Integration for Google Meet
+# Freckle
+
+Automatic Do-Not-Disturb integration for Google Meet with SMART Wifi bulbs and devices running Tasmota.
 
 ## About
 
@@ -6,8 +8,7 @@ This open source Google Chrome extension was created to automatically turn on a 
 
 [More About Tasmota](https://tasmota.github.io/docs/About/)
 
-The extension works by inspecting pages loaded on [meet.google.com](https://meet.google.com) to detect the presence of a "Leave call" button. When the presence of this button is detected, it fires an "online" event which is used to issue a request to an HTTP endpoint. When this element leaves the dom, it fires an "offline" event and hits another HTTP endpoint. These endpoints are fully configurable
-and could work with any device that has an HTTP API on your local network.
+The extension works by inspecting pages loaded on [meet.google.com](https://meet.google.com) to detect the presence of a "Leave call" button. When the presence of this button is detected, it fires an "online" event which is used to issue a request to an HTTP endpoint. When this element leaves the dom, it fires an "offline" event and hits another HTTP endpoint. These endpoints are fully configurable and could work with any device that has an HTTP API on your local network.
 
 ## Configuration Options
 
@@ -29,6 +30,14 @@ If you are getting errors sending commands to your Tasmota device, it might be b
 ## Thank You
 
 Thank you Tasmota for creating such a neat little project! Without you I could not have done this.
+
+## Why is it called Freckle?
+
+I made this project during the pandemic to deter my kids from barging into my office during meetings. My daughter is particularly chatty and very much enjoys knowing what I'm working on and who I'm talking to. She also has some adorable freckles. So with that in mind, I am naming this project after her.
+
+## Does it work with IFTTT?
+
+I would love that! I read some documentation and it was not at all clear to me how to publish a custom trigger into IFTTT. If you have any insight into this, please contact me.
 
 ## Contributing
 
