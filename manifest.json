@@ -1,6 +1,6 @@
 {
     "name": "Google Meet On-Air",
-    "description": "Capture events when Google Meet goes on and off air.",
+    "description": "Automatic Do-Not-Disturb for SMART Wifi bulbs and other devices running Tasmota.",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
@@ -10,18 +10,18 @@
         {
             "matches": ["https://meet.google.com/*"],
             "run_at": "document_idle",
-            "js": ["onAirClient.js"]
+            "js": ["client.js"]
         }
     ],
-    "options_page": "options.html",
+    "options_page": "configuration/options.html",
     "permissions": ["activeTab", "scripting", "storage"],
     "action": {
-        "default_popup": "options.html"
+        "default_popup": "configuration/options.html"
     },
     "icons": {
-      "16": "/images/logo_on_16.png",
-      "32": "/images/logo_on_32.png",
-      "48": "/images/logo_on_48.png",
-      "128": "/images/logo_on_128.png"
+      "16": "/images/logo_off_16.png",
+      "32": "/images/logo_off_32.png",
+      "48": "/images/logo_off_48.png",
+      "128": "/images/logo_off_128.png"
     }
 }
