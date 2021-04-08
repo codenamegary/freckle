@@ -1,6 +1,6 @@
 {
-    "name": "Google Meet On-Air",
-    "description": "Automatic Do-Not-Disturb for SMART Wifi bulbs and other devices running Tasmota.",
+    "name": "Freckle",
+    "description": "Automatic Do-Not-Disturb for SMART Wifi bulbs and other devices running Tasmota with Google Meet integration.",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
