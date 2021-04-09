@@ -1,6 +1,8 @@
 # Freckle
 
-Automatic Do-Not-Disturb integration for Google Meet with SMART Wifi bulbs and devices running Tasmota.
+Automatic Do-Not-Disturb integration for Google Meet with SMART Wifi bulbs and devices running [Tasmota](https://tasmota.github.io/docs/About/).
+
+[Download the Google Chrome extension zip file](https://github.com/codenamegary/freckle/archive/refs/heads/master.zip)
 
 ## About
 
@@ -12,7 +14,7 @@ The extension works by inspecting pages loaded on [meet.google.com](https://meet
 
 ## Configuration Options
 
-![Screenshot of Extension options](https://github.com/codenamegary/tasmota-google-meet/blob/%232-add-README/README-options.png?raw=true)
+![Screenshot of Extension options](https://github.com/codenamegary/freckle/blob/%232-add-README/README-options.png?raw=true)
 
 ## Browser Configuration
 
@@ -31,13 +33,7 @@ If you are getting errors sending commands to your Tasmota device, it might be b
 
 Thank you Tasmota for creating such a neat little project! Without you I could not have done this.
 
-## Why is it called Freckle?
-
-I made this project during the pandemic to deter my kids from barging into my office during meetings. My daughter is particularly chatty and very much enjoys knowing what I'm working on and who I'm talking to. She also has some adorable freckles. So with that in mind, I am naming this project after her.
-
-## Does it work with IFTTT?
-
-I would love that! I read some documentation and it was not at all clear to me how to publish a custom trigger into IFTTT. If you have any insight into this, please contact me.
+And big thanks to [Troy Williams](https://open.spotify.com/artist/6Op58fl8fRFPKJhFvV3Ays?si=jy4zWX-VTeajSoqcxC5eOQ) who is an incredibly talented musician, songwriter and producer for the inspiration.
 
 ## Contributing
 
@@ -48,6 +44,32 @@ Pull requests welcome!
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+## Support
+
+- Check the [wiki](https://github.com/codenamegary/freckle/wiki)
+- File an [issue](https://github.com/codenamegary/freckle/issues)
+- Email me [freckle.software@gmail.com](mailto:freckle.software@gmail.com)
+
+## Version History
+
+Version | Date | Notes
+--- | -------------- | ---
+1.0 | 2021-04-08 | Initial GitHub release and submission to Chrome Web Store
+
+## FAQ
+
+### Why is it called Freckle?
+
+I made this project during the pandemic to deter my kids from barging into my office during meetings. My daughter is particularly chatty and very much enjoys knowing what I'm working on and who I'm talking to. She also has some adorable freckles. So with that in mind, I am naming this project after her.
+
+### Does it work with IFTTT?
+
+I would love that! I read some documentation and it was not at all clear to me how to publish a custom trigger into IFTTT. If you have any insight into this, please contact me.
+
+### Is my wicked cool spark-mc-zapface SMART plug supported?
+
+Does it have a locally accessible HTTP API? If yes, probably. If not, no. If you are asking "what's an  API", Troy that's a great question.
 
 ## License
 
