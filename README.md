@@ -14,7 +14,7 @@ The extension works by inspecting pages loaded on [meet.google.com](https://meet
 
 ## Configuration Options
 
-![Screenshot of Extension options](https://github.com/codenamegary/freckle/blob/%232-add-README/README-options.png?raw=true)
+![Screenshot of Extension options](https://github.com/codenamegary/freckle/blob/master/README-options.png?raw=true)
 
 ## Browser Configuration
 
