@@ -14,7 +14,7 @@
         }
     ],
     "options_page": "configuration/options.html",
-    "permissions": ["activeTab", "scripting", "storage"],
+    "permissions": ["storage"],
     "action": {
         "default_popup": "configuration/options.html"
     },
