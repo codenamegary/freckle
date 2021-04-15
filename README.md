@@ -2,6 +2,8 @@
 
 Automatic Do-Not-Disturb integration for Google Meet with SMART Wifi bulbs and devices running [Tasmota](https://tasmota.github.io/docs/About/).
 
+[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/freckle/ldphmaibkhdmcadfnjbgdpfjagekgpom)
+
 [Download the Google Chrome extension zip file](https://github.com/codenamegary/freckle/archive/refs/heads/master.zip)
 
 ## About
